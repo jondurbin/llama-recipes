@@ -249,5 +249,8 @@ def main(**kwargs):
     if not train_config.enable_fsdp or rank==0:
         [print(f'Key: {k}, Value: {v}') for k, v in results.items()]
 
-if __name__ == "__main__":
+def foo():
     fire.Fire(main)
+
+if __name__ == "__main__":
+    foo()
